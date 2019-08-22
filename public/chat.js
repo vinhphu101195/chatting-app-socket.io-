@@ -10,6 +10,7 @@ var feedback = document.getElementById("feedback");
 
 // Emit events
 btn.addEventListener("click", function() {
+  //emit(name of type, and kind of data)
   socket.emit("chat", {
     message: message.value,
     handle: handle.value
